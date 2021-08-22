@@ -40,9 +40,9 @@
       .profile-pic {
         width: 100%;
         border-radius: 100%;
-        outline: 10px solid $intro-background;
+        box-shadow: 0 0 0 10px $intro-background;
         @include media(">phone") {
-          outline-width: 16px;
+          box-shadow: 0 0 0 16px $intro-background;
         }
       }
       &::after {
@@ -54,9 +54,10 @@
         height: 20%;
         background-color: $green-primary;
         border-radius: 50%;
-        outline: 6px solid $intro-background;
+        box-shadow: 0 0 0 6px $intro-background;
+
         @include media(">phone") {
-          outline-width: 8px;
+          box-shadow: 0 0 0 8px $intro-background;
         }
       }
     }
