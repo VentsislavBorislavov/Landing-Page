@@ -1,0 +1,41 @@
+.message {
+  background-color: $chat-gray;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  border-radius: 16px;
+  .userImg {
+    width: 60px;
+    border-radius: 50%;
+  }
+
+  .content {
+    padding: 22px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .message-info {
+      display: flex;
+      align-items: center;
+      .username {
+        display: inline-block;
+        color: $red;
+        font-size: 1.3rem;
+        margin: 0;
+      }
+
+      .date {
+        display: inline-block;
+        font-size: 0.8rem;
+        color: #9a9a9a;
+        margin: 0;
+        margin-left: 6px;
+      }
+    }
+    .message-content {
+      margin: 0;
+      font-size: 0.95rem;
+      color: $gray;
+    }
+  }
+}
