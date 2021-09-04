@@ -1,0 +1,36 @@
+#features {
+  color: $gray;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  @include media(">=tablet") {
+    margin-top: 20px;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  .message {
+    & + .message {
+      margin-top: 20px;
+    }
+  }
+
+  .weather-embeds {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .weather-embed {
+      margin-top: 60px;
+    }
+  }
+}
