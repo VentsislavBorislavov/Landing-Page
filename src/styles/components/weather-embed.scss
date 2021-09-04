@@ -1,0 +1,51 @@
+.weather-embed {
+  min-width: 240px;
+  max-width: 300px;
+  background-color: $ex-gray;
+  padding: 20px 30px;
+  border-radius: 16px;
+  position: relative;
+  &::before {
+    content: "";
+    width: 4px;
+    height: 96%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  &.red::before {
+    background-color: $red;
+  }
+  &.blue::before {
+    background-color: $light-blue;
+  }
+  &.green::before {
+    background-color: $example-green;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  h4 {
+    margin-bottom: 0;
+    margin-top: 12px;
+    font-size: 1.2rem;
+  }
+
+  p {
+    margin-top: 6px;
+    margin-bottom: 0px;
+    font-weight: 300;
+  }
+
+  img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: 0 10%;
+    border-radius: 16px;
+    margin-top: 10px;
+  }
+}
