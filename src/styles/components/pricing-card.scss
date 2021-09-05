@@ -1,0 +1,52 @@
+.pricing-card {
+  color: $gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  padding: 60px 0 0 0;
+  position: relative;
+  margin-top: 60px;
+  max-width: 450px;
+  &.blue {
+    box-shadow: 0 0 0 12px $blue;
+    a {
+      background-color: $blue;
+    }
+  }
+  &.green {
+    box-shadow: 0 0 0 12px $green-primary;
+    a {
+      background-color: $green-primary;
+    }
+  }
+  h2 {
+    font-size: 2.3rem;
+    margin-top: 0;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  ul {
+    padding: 0;
+    margin-left: -20px;
+    li {
+      font-size: 1.5rem;
+    }
+  }
+
+  a {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 60px;
+    color: $gray;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 16px;
+    width: 50%;
+    text-align: center;
+    padding: 10px 0;
+  }
+}

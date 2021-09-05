@@ -1,0 +1,14 @@
+@import "./pricing-card.scss";
+#go-premium {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
+  grid-template-rows: repeat(auto-fit, 1fr);
+  align-items: center;
+  justify-content: space-evenly;
+  .pricing-card {
+    min-height: 430px;
+  }
+}
