@@ -2,8 +2,11 @@
   background-color: $chat-gray;
   display: flex;
   align-items: center;
-  padding-left: 30px;
+  padding-left: 10px;
   border-radius: 10px;
+  @include media(">phone") {
+    padding-left: 30px;
+  }
   .userImg {
     width: 60px;
     border-radius: 50%;

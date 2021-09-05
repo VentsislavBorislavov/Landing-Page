@@ -1,4 +1,4 @@
-interface Message {
+interface PropsType {
   userImg: string;
   username: string;
   date: string;
@@ -6,7 +6,13 @@ interface Message {
   userColor: string;
 }
 
-const Message = ({ userImg, username, date, children, userColor }: Message) => {
+const Message = ({
+  userImg,
+  username,
+  date,
+  children,
+  userColor,
+}: PropsType) => {
   return (
     <div className="message">
       <img className="userImg" src={userImg} alt="" />
