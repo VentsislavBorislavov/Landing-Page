@@ -50,7 +50,7 @@ const Features = () => {
         <WeatherEmbed
           location="Berlin"
           image={GoldenExperienceImg}
-          feelsLike="The Sun"
+          feelsLike="Golden Experience"
           temperature={12}
           embedType="green"
         />

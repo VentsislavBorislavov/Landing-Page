@@ -1,6 +1,6 @@
 @import "./pricing-card.scss";
 #go-premium {
-  width: 90%;
+  width: calc(90%-12px);
   max-width: 1200px;
   margin: auto;
   display: grid;

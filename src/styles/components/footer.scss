@@ -1,0 +1,68 @@
+footer {
+  background-color: $ex-gray;
+  padding: 40px 0;
+  margin-top: 120px;
+  border-top-left-radius: 40px;
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    @include media("<=phone") {
+      grid-template-columns: 1fr;
+      width: 96%;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      @include media("<=tablet") {
+        display: block;
+      }
+    }
+
+    .nav {
+      @include media("<=tablet") {
+        margin-left: 20px;
+        margin-bottom: 40px;
+      }
+      h2 {
+        font-size: 2rem;
+        @include media("<=tablet") {
+          font-size: 1.4rem;
+        }
+      }
+      ul {
+        padding: 0;
+        li {
+          margin: 10px 0;
+          list-style-type: none;
+          font-size: 1.3rem;
+          @include media("<=tablet") {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+
+    .personal-link {
+      text-align: center;
+      span {
+        font-size: 1.5rem;
+        @include media("<=tablet") {
+          font-size: 1.1rem;
+        }
+        img {
+          margin-left: 10px;
+          @include media("<=tablet") {
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
+}
